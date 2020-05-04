@@ -1,0 +1,137 @@
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    background-color: black;
+}
+
+
+.background-picture{
+ position: absolute;
+ background-image: url('./assets/stars-cover.jpg');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+
+ width: 100%; 
+ height: 100vh;
+ z-index: -1;
+}
+
+@media (min-width: 680px) {
+    .contact{
+        padding-top: 55px;
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    } 
+}
+
+@media (max-width: 680px) {
+    header{
+        background-color: white;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    ul{
+        display: flex;
+        height: 70px;
+        justify-content: space-around;
+        align-items: center;        /* for single line flex container */
+  
+    }
+}
+
+
+a{
+    text-decoration: none;
+}    
+
+main{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    text-align: justify; 
+}
+
+.about-myself{
+    max-width: 450px;
+    color: white;
+}
+
+h1{
+    letter-spacing: 18px;
+    font-size: 40px;
+}
+
+.show-more{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.more-content{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+  
+}
+
+.more-content-about-myself{
+    width: 800px;
+    color: #272121;
+}
+
+h2{
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
