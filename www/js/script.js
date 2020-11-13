@@ -1,8 +1,8 @@
 
 var image_pool = [
-    "url('./assets/stars-cover-2.jpg')",
-    "url('./assets/stars-cover-3.jpg')",
-    "url('./assets/stars-cover.jpg')"
+    "url('./images/stars-cover-2.jpg')",
+    "url('./images/stars-cover-3.jpg')",
+    "url('./images/stars-cover.jpg')"
 ]
 
 function sleep(ms) {
@@ -12,7 +12,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 async function changeBackground(){
     var i = 0;
     while(true){
-        await sleep(20000);
+        await sleep(7000);
         let background = document.getElementById('cover_id');
         background.classList.remove("background-picture");
         await sleep(10);
